@@ -78,7 +78,7 @@ function is_installed_apt {
 
 function install_puppet() {
     if [ "$(gem search -i puppet)" = "false" ]; then
-        install_gem_package puppet
+        install_gem_package puppet 3.8.1
     else
         echo 'puppet found'
     fi
